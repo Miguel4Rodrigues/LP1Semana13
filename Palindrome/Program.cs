@@ -10,9 +10,9 @@ namespace Palindrome
             if (args == null || args.Length == 0)
                 return;
 
-            var program = new Program();
+            Program program = new Program();
 
-            foreach (var arg in args)
+            foreach (string arg in args)
             {
                 bool result = program.IsPalindrome(arg);
                 Console.WriteLine($"{arg} -> {result.ToString().ToLower()}");
